@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding:0;
+    
+}
+
+#navbar{
+    background-color:rgb(25, 83, 36);
+    padding: 18px 14px;
+    position:fixed;
+    width: 100%;
+    font-weight: 100;
+    /* z-index: 1;very important toprevent navbaroverlap */
+    z-index: 1;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    color:white;
+    text-decoration: none;
+    padding: 13px 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#navbar li a:hover{
+    background-color: rgb(218, 232, 221);
+    color:black ;
+}
+#navlogo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0 14px;
+    font-size: 29px;
+    margin-right: 40px;
+}
+.navbtn{
+    display: flex; 
+}
+/* #searchbar{
+    width: 320px;
+    border-top: thin solid #e5e5e5;
+    border-right: thin solid #e5e5e5;
+    box-shadow: 0 1px 1px 1px;
+    float: left;
+    height: 28px;
+    outline: none;
+
+}
+#searchicon{
+    background-color: black;
+    border-top: thin solid #e5e5e5;
+    box-shadow: 1px 1px 1px 1px #e5e5e5;
+    cursor: pointer;
+    float: left;
+    height: 37px;
+    margin: 11px 5px 5px 5px;
+    text-align: center;
+    width: 50px;
+}
+#searchicon img{
+    width: 20px;
+    margin: 4px;;
+} */
+.formbtn{
+    color: aliceblue;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+}
+input[type='search'] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 18px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+input[type='search']::placeholder{
+    color: rgb(195, 237, 237);
+}
+button[type='submit']{
+    /* text-indent: -999px; */
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    height:40px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+#signupid{
+    background-color: rgb(151, 143, 52);
+}
+#loginid{
+    background-color: rgb(151, 143, 52);
+    margin-right: 25px;
+    margin-left: 100px;
+}
+#navlogo img{
+    height:25px;
+}
+.background{
+    width: 100%; 
+    background-color:black;
+    /* background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 100% 100%; 
+    background-size: 1450px;  */
+}
+#heading1{
+    text-align: center;
+    padding-top: 35px;
+    font-size: 50px;
+    color:rgb(195, 242, 103);
+}
+#heading2{
+    text-align: center;
+    font-size: 38px;
+    font-style: italic;
+    color: blanchedalmond;
+}
+.symbolclass{
+    height: 70px;
+}
+#symbolcss5{
+    color: rgb(154, 202, 191);
+    /* font-size: 100px;  */
+    text-align: center;
+    height: 2px; 
+    transition: .5s;
+    /* -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); */
+    animation-name: creative1;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes creative1{
+    from{
+        font-size: 2px;
+    }
+    to{
+        font-size: 85px;
+    }
+}
+.container1{
+    padding: 20px;
+    text-align: center;
+    color: rgb(105, 246, 155);
+}
+#para1{
+    font-size: 75px;
+    font-style: italic;
+    color: rgb(83, 192, 121);
+}
+#para2{
+    font-size: 70px;
+    font-style: oblique;
+    padding-bottom: 5px;
+}
+#para3{
+    font-size: 30px;
+    color: aliceblue;
+}
+#aboutheading{
+    color: rgb(215, 234, 10);
+    /* display: inline; */
+    text-align: center;
+    padding-bottom: 9px;
+    font-size: 30px;
+    /* justify-content: center; */
+}
+#slash{
+    text-align: center;
+    color: aliceblue;
+    display: inline;
+}
+.about1{
+    padding-top:o ;
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+    color: rgb(235, 221, 63);
+}
+#para4{
+    border: 4px solid red;
+    width: 52%;  
+    padding: 4px; 
+    font-size: 20px;
+}
+.button{
+    display: flex;
+    margin: auto;
+    background-color: aqua;
+    color: brown;
+    font-size: large;
+    padding: 4px;
+    cursor: pointer;
+}
+#heading3{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+    color: antiquewhite;
+}
+.container2{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background: black;
+}
+.sentence a{
+    text-decoration: none;
+}
+.box1{
+    position: relative;
+    width: calc(430px - 30px);
+    height: calc(350px - 30px);
+    /* background: rgb(6, 86, 2); */
+    background: black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 150px;
+   
+}
+.icon1{
+    padding: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+    
+}
+.sentence{
+    display: flex;
+    cursor: pointer;
+}
+.robopara{
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: wheat;
+}
+.arrowfunc{
+    padding-top: 13px;
+    padding-left: 180px;
+    font-size: 30px;
+    color: wheat;
+}
+.arrowfunc12{
+    padding-top: 13px;
+    font-size: 30px;
+    color: rgb(250, 90, 26);
+}
+
+.box2{
+    position: relative;
+    width: calc(430px - 30px);
+    height: calc(350px - 30px);
+    background:black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.icon2{
+
+    padding: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.debugpara{
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: wheat;
+}
+.box3{
+    position: relative;
+    width: calc(430px - 30px);
+    height: calc(350px - 30px);
+    background: black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.icon3{
+    padding: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.hackpara{
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: wheat;
+}
+.box4{
+    position: relative;
+    width: calc(430px - 30px);
+    height: calc(350px - 30px);
+    background: black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 150px;
+}
+.icon4{
+    padding: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.botpara{
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: wheat;
+}
+.arrowfunc4{
+    padding-top: 13px;
+    padding-left: 260px;
+    font-size: 30px;
+    color: wheat;
+}
+.box5{
+    position: relative;
+    width: calc(430px - 30px);
+    height: calc(350px - 30px);
+    background: black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.icon5{
+    padding: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.arrowfunc5{
+    padding-top: 13px;
+    padding-left: 130px;
+    font-size: 30px;
+    color: wheat;
+}
+.cyptopara{
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: wheat;
+}
+.box6{
+    position: relative;
+    width: calc(430px - 30px);
+    height: calc(350px - 30px);
+    background: black;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+.icon6{
+    padding: 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+.festpara{
+    padding-top: 13px;
+    padding-left: 15px;
+    font-size: 30px;
+    color: wheat;
+}
+.container3{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+.borderimg{
+    border-radius: 5px ;
+}
+#sponsorstitle{
+    font-size: 60px;
+    text-decoration:underline double aquamarine 1px;
+}
+.titlesize{
+    font-size: 40px;
+}
+.textoverline{
+    text-decoration: overline aquamarine 1px;
+}
+.container4{
+    padding-left: 60px;
+    color: aliceblue;
+    background: black;
+    display: flex;
+
+}
+.contactsection{
+    width:70%;
+    padding-left: 20px;
+    /* border-left: 3px solid rgb(9, 251, 251);
+    
+    border-right: 3px solid rgb(9, 251, 251); */
+}
+#contactheading{
+    font-size: 50px;
+    color: rgb(105, 246, 155);   
+}
+#contact1{
+    color: aqua;
+}
+#contact2{
+    color: aqua;
+}
+#emailsymbol{
+    color: bisque;
+}
+#connecttext{
+    display: inline;
+}
+#dotcolor{
+    display: inline;
+    color: burlywood;
+}
+#instaimg{
+    padding-left: 25px;
+}
+#reserved{
+    color: rgb(105, 246, 155);
+}
+.contactimg {
+    /* border-right: 3px solid rgb(9, 251, 251); */
+    padding-right: 90px;
+}
+
+
+.robocontainer1{
+    background-color: black;
+    color:white;
+    display: flex;
+}
+.robocont1img{
+    
+    padding-left: 50px;
+    padding-top: 120px;
+    width: 38%;
+}
+.robocont1img img{
+    border-right: 4px solid rgb(28, 154, 208);
+}
+.robocont1matter{
+    padding-top:190px ;
+    padding-left: 20px;
+    width: 62%;
+}
+.robocont1matter h2{
+    color: antiquewhite;
+    font-size: 60px;
+    font-style:solid;
+}
+.robocont1matter p{
+    font-size: 20px;
+}
+.buttonrobo{
+    background-color: rgb(9, 210, 143);
+    font-size: 25px;
+    padding: 12px;
+}
+.buttonrobowithdrawform{
+    background-color: rgb(9, 210, 143);
+    font-size: 25px;
+    padding: 13px;
+    margin-left: 12px;
+    color: rgb(0, 0, 0);
+}
+.roboboxes4{
+    display: flex;
+    background-color: black;
+    color: white;
+}
+#robobox1{
+    padding-left: 150px;
+    border-right: .5px solid white;
+    padding-right: 130px;
+}
+#robobox2{
+    padding-left: 20px;
+    border-right: .5px solid white;
+    padding-right:130px;
+}
+#robobox3{
+    padding-left: 20px;
+    border-right: .5px solid white;
+    padding-right: 110px;
+    
+}
+#robobox4{
+    padding-right:200px;
+    
+}
+.robosteps{
+    background-color: black;
+    color: white;
+    
+}
+.roborules{
+    padding-left: 200px;
+    font-size: 21px;
+    padding-top: 90px;
+}
+.roborules h1{
+    color: aquamarine;
+}
+
+
