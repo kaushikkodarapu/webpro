@@ -16,12 +16,16 @@ const getUsers = (request, response) => {
 }
 
 const getUserById = (request, response) => {
-  const id = parseInt(request.params.id)
-
+  // const id = parseInt(request.params.id)
+  const {id,password} = request.body
   pool.query('SELECT * FROM users WHERE id = $1', [id], (error, results) => {
     if (error) {
       throw error
     }
+    if(password != results.password){
+      throw error
+    }
+    
     response.status(200).json(results.rows)
   })
 }
@@ -35,8 +39,9 @@ const createUser = (request, response) => {
       throw error
     }
     //${results.insertid}
-    response.status(200).send(`User added with ID: ${id}`)
+    response.status(200).send(`User added with ID: ${id}`);
     console.log(request.body);
+    response.status(200).json(results.rows);
     // response.status(200).send(` hello ${uname}`)
     id++;
   })

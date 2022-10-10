@@ -69,7 +69,8 @@ app.post('/registerform', db.registerUser);
 
 app.post('/signupform', db.createUser);
 
-app.get('/loginform/:id',db.getUserById);
+
+app.post('/loginform',db.getUserById);
 
 app.delete('/withdrawform/:id',db.deleteUser);
 

@@ -1,7 +1,7 @@
 { 
    "scripts": {
     "test":"echo \"Error: no test specified\" && exit 1",
-    "start": "node tech3/server3.js"
+    "start": "node tech3/server3.js" 
   },
 
   "license": "ISC",
