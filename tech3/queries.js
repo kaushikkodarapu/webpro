@@ -22,28 +22,26 @@ const getUserById = (request, response) => {
     if (error) {
       throw error
     }
-    if(password != results.password){
-      throw error
-    }
-    
     response.status(200).json(results.rows)
   })
 }
+
 let id=1;
 const createUser = (request, response) => {
  
   const { uname, email ,password} = request.body
 
-  pool.query(`INSERT INTO users (id,uname, email,password) VALUES ($1, $2, $3, $4)`, [id,uname, email,password], (error, results) => {
+  pool.query(`INSERT INTO users (id,uname, email,password) VALUES ($1, $2, $3, $4)`, [id,uname, email,password], (error) => {
     if (error) {
       throw error
     }
     //${results.insertid}
     response.status(200).send(`User added with ID: ${id}`);
-    console.log(request.body);
-    response.status(200).json(results.rows);
-    // response.status(200).send(` hello ${uname}`)
     id++;
+    console.log(request.body);
+    // response.status(200).json(results.rows);
+    // response.status(200).send(` hello ${uname}`)
+    
   })
 }
 
